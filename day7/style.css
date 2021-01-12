@@ -1,100 +1,75 @@
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 :root {
-  --main-color: #f3eed9;
-  --sec-color: #824936;
-  --third-color: #222c2a;
+  --main-color: #222c2a;
+  --second-color: #f3eed9;
+  --third-color: #824936;
 }
 
 body {
+  margin: 0;
   font-family: "Roboto", sans-serif;
+  font-size: 1.3125rem;
+  line-height: 1.6;
+  color: var(--main-color);
 }
 
 img {
-  max-width: 100%;
-  border: 0;
+  width: 100%;
 }
 
-h1 {
-  font-weight: 900;
-  font-family: "Playfair";
-  font-size: 60px;
-  color: var(--sec-color);
-}
-
+h1,
 h2 {
-  font-weight: 900;
-  font-size: 36px;
-  font-family: "Playfair";
-  padding-bottom: 2rem;
+  margin-top: 0;
+  font-family: "Playfair Display", sans-serif;
+  line-height: 1;
 }
 
-p {
-  font-weight: 400;
-  font-size: 21px;
+section {
+  padding: 4em 0;
 }
 
-.title__text {
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 0.4rem;
-  padding-bottom: 1rem;
+.section-title {
+  font-size: 2.25rem;
+  color: var(--second-color);
+}
+
+.section-title--dark {
+  color: var(--third-color);
+}
+
+.section-three {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.section-four {
+  background-color: var(--third-color);
+  color: #fff;
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-
-  padding: 4rem 0;
 }
 
-.header {
-  min-height: 660px;
-  background: var(--main-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.intro {
+  background: var(--second-color);
+  padding: 200px 0;
   text-align: center;
+  color: var(--third-color);
 }
 
-.title {
-  max-width: 60%;
-  margin: 0 auto;
-}
-
-.quality {
-  background: FFF;
-}
-
-.quality h2 {
-  color: var(--sec-color);
-  text-align: center;
-}
-
-.row {
-  display: flex;
-  width: 80%;
-  margin: 0 auto;
-  justify-content: space-between;
-  max-width: 1128px;
-}
-
-.col {
-  width: 46%;
-}
-
-.custom {
-  background: var(--third-color);
+.intro__text {
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  letter-spacing: 10px;
   color: var(--main-color);
+  margin: 0 0 0.25em;
 }
 
-.created {
-  background: var(--sec-color);
-  color: var(--main-color);
+.intro__title {
+  font-size: 3rem;
 }

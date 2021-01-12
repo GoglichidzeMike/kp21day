@@ -38,6 +38,7 @@ section {
 
 .section-title--dark {
   color: var(--third-color);
+  text-align: center;
 }
 
 .section-three {
@@ -51,8 +52,9 @@ section {
 }
 
 .container {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
+  max-width: 1128px;
 }
 
 .intro {
@@ -72,4 +74,22 @@ section {
 
 .intro__title {
   font-size: 3rem;
+}
+
+@media (min-width: 800px) {
+  .row {
+    display: flex;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .col + .col {
+    margin-left: 5em;
+  }
+
+  .intro__title {
+    font-size: 3.75rem;
+  }
 }

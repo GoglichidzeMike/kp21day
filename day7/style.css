@@ -59,9 +59,12 @@ section {
 
 .intro {
   background: var(--second-color);
-  padding: 200px 0;
-  text-align: center;
   color: var(--third-color);
+  text-align: center;
+  min-height: 660px;
+
+  display: flex;
+  align-items: center;
 }
 
 .intro__text {
